@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juli Store</title>
+    <link rel="shortcut icon" href="images/avatar.png" />
+    <style>
+        {
+            box-sizing:border-box;
+        }
+        body{
+            margin:0;
+        }
+
+        input[type-text]{
+        width:100%;
+        box-sizing: border-box;
+        border:3px solid #CCC;
+        border-radius:20px;
+        font-size:16px;
+        background-color:white;
+        background-repeat:no-repeat;
+        padding: 10px 20px 12px 40px;
+        }
+        .box1{
+            float: left;
+            width:30%;
+            margin-bottom: -15px;
+        }
+        .box2{
+            width:130px;
+            float: left;
+            width:35%;
+            padding:50px;
+            height:90px;
+        }
+        
+        .timkiem::after{
+            overflow: hidden;
+            content: "";
+            clear: both;
+            display:table;
+        }
+        .menu{
+            overflow:hidden;
+            font-family:Arial, Helvetica, sans-serif;
+            margin:0px auto;
+            background:#eceae900;
+        }
+        .menu a{
+            float:right;
+            font-size:16px;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            background-color: white;
+        }
+        .dropdown{
+            float:left;
+            overflow: hidden;
+            background:#FF6699;
+        }
+        .dropdown .dropbtn{
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font: inherit;
+            margin: 0;
+        }
+        .menu a:hover, .dropdown:hover .dropbtn:hover{
+            background-color: #FF0000;
+        } 
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            box-shadow: 1;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .column{
+            float:left;
+            width: 15%;
+            padding: 5px;
+            background-color:#FF82AB;
+            height: auto;
+        }
+        .column h3{
+            text-align: center;
+            margin: 5px;
+        }
+        .column a {
+            float: none;
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .column a:hover{
+            background-color: #696969;
+            color: white;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .sp{
+            margin-left: 20px;
+            overflow: hidden;
+            float: left;
+            margin-bottom:0px ;
+        }
+        .ten{
+            width: 290px;
+            height: 150px;
+            margin-left: 20px;
+            overflow: hidden;
+            float: left;
+            margin-bottom: 5px;
+        }
+        .tensp{
+            text-align:left;
+            font-family: "Lucida Console", Courier, monospace;
+            color: #009900;
+        }
+        .giasp{
+            text-align: right;
+            font-size: 16px;
+            font-family: "Lucida Console", Courier, monospace;
+            color:rgb(241, 7, 7);
+        }
+        .ten button{
+            color:wheat;
+            text-align: center;
+            background: #e97407;
+            float: right;
+            border: 2px solid #888888;
+        }
+        .tensp{
+            text-align: center;
+            font-family:"Times New Roman", Times, serif;
+            font-size:17px;
+            color: #2F4F4F#008080;
+        }
+        .chantrang{
+            font-family: "Lucida Console", Courier,monospace;
+            background: #f5a4bf;
+
+            height: auto;
+                overflow: hidden;
+        content: "";
+        clear: both;
+        display:table;
+        color:#020a13;
+        }
+        .chan1{
+            float: left;
+            width: 20%;
+            padding: 30px;
+        }
+        .chan2{
+            float: left;
+            width: 20%;
+            padding: 30px;
+        }           
+        .chan3{
+            float: left;
+            width: 20%;
+            padding: 30px;
+        }
+        .chan4{
+            float: left;
+            width: 20%;
+            padding: 30px;
+        }
+
+    </style>
+
+   
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="timkiem">
+            <div class="box1">
+                <a href="#"><img src = "images/Bia.png"s alt="" width="1300" height="300"  style="float:center;margin: 0px 100px 0px 40px;" /></a>
+            </div>
+            
+        </div>
+        
+    </div>
+            <div class="menu">
+                <ul>
+                <div class="dropdown">
+                    <a class="dropbtn" href="https://www.facebook.com/juli.store20/about?view_public_for=103050784680684">GIỚI THIỆU</a>
+        
+                </div>
+            <div class="dropdown">
+                <button class="dropbtn">VÁY
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            <div class="dropdown-content">
+                <div class="row">
+                    <div class="column">
+                            <h3>Sản phẩm</h3>
+                        <a href="#">Váy dự tiệc</a>
+                        <a href="#">Váy ăn cưới</a>
+                        <a href="#">Váy chụp kỷ yếu</a>
+                        <a href="#">Váy Sexy</a>
+                        <a href="#">Váy bánh bèo</a>
+                        <a href="#">Váy sang chảnh</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">TÚI XÁCH
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <div class="row">
+                        <div class="column">
+                            <h3>Sản phẩm</h3>
+                            <a href="#">Túi hộp</a>
+                            <a href="#">Túi kẹp nách</a>
+                            <a href="#">Túi da</a>
+                            <a href="#">Túi vải</a>
+                            <a href="#">Túi Tote</a>
+                    
+                        </div>
+            </div>
+            </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">GIÀY DÉP
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <div class="row">
+                        <div class="column">
+                            <h3>Giày</h3>
+                            <a href="#">Giày thể thao</a>
+                            <a href="#">Giày cao gót</a>
+                            <a href="#">Giày búp bê</a>
+                            <a href="#">Giày da</a>
+                            <a href="#">Boost</a>
+                        </div>
+                        <div class="column">
+                            <h3>Dép</h3>
+                            <a href="#">Dép Saldal</a>
+                            <a href="#">Dép cao gót</a>                      
+                            <a href="#">Dép lê</a>
+                            <a href="#">Dép đi trong nhà</a>
+                            <a href="#">Dép quai hậu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                    <button class="dropbtn">CROPTOP
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="row">
+                            <div class="column">
+                                <h3>Sản phẩm</h3>
+                                <a href="#">Croptop tay dài</a>
+                                <a href="#">Croptop tay ngắn</a>
+                            </div>
+                </div>
+                </div>
+                </div>
+            <div class="dropdown">
+                <button class="dropbtn">ÁO PHÔNG
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <div class="row">
+                        <div class="column">
+                            <h3>Sản phẩm</h3>
+                            <a href="#">Áo phông mùa hè</a>
+                            <a href="#">Áo phông thu đông</a>
+                        </div>
+            </div>
+            </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">CHÂN VÁY
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <div class="row">
+                        <div class="column">
+                            <h3>Sản phẩm</h3>
+                            <a href="#">Chân váy ngắn</a>
+                            <a href="#">Chân váy dài</a>
+                            <a href="#">Chân váy chữ A</a>
+                            <a href="#">Chân váy đuôi cá</a>
+                        </div>
+            </div>
+            </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="#news">QUẦN SHORT</a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">CARDIGAL
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <div class="row">
+                        <div class="column">
+                            <h3>Sản phẩm</h3>
+                            <a href="#">Cardigan Thu xuân</a>
+                            <a href="#">Cardigan len</a>
+                            <a href="#">Cardigan mỏng mùa hè</a>
+                        </div>
+            </div>
+            </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn"</a>
+                    <form>
+                        <input type="text" name="search" placeholder="Tìm kiếm..."/>
+                    </form>
+            </div>
+        </div>
+        </ul>
+            </div>
+
+            <div class="ảnh">
+                <img src="images/bo10.jpg" alt="" width="40%" height="500" style="float:center;margin: 20px 20px 20px 20px ;"/>
+                <img src="images/tui14.jpg" alt="" width="40%" height="500" style="float: left;margin: 20px 0px 20px 20px;"/>
+                <img src="images/bo16.jpg" alt="" width="40%" height="500" style="float: left;margin: 20px 0px 20px 20px;"/>
+                <img src="images/tui19.jpg" alt="" width="40%" height="500" style="float: center;margin: 20px 0px 20px 20px;"/>
+            </div>
+            
+            <div class="sản phẩm">
+                <div style="color: #DC143C"><center><strong>NEW ARRIVAL - Hàng Mới Về - Hot ITEM</strong></center></div>
+                <div style="margin-left: 20px;color: #f1900f"><h2>VÁY XINH</h2></div>
+                <div class="monan">
+                    <a class="sp" href="#"><img src="images/bo12.jpg" alt="" width="290" height="300px"/></a>
+                    <a class="sp" href="#"><img src="images/bo13.jpg" alt="" width="290" height="300px"/></a>
+                    <a class="sp" href="#"><img src="images/bo4.jpg" alt="" width="290" height="300px"/></a>
+                    <a class="sp" href="#"><img src="images/bo3.jpg" alt="" width="290" height="300px"/></a>
+                </div>
+            </div class="tenmonan">
+                <div class="ten">
+                    <p class="tensp">Váy hồng voan tiểu thư hoa nhí</p>
+                    <h2 class="giasp">350.000đ</h2>
+                    <button>Đặt hàng</button>
+                </div>
+                <div class="ten">
+                    <p class="tensp">Váy hoa dáng sang chảnh</p>
+                    <h2 class="giasp">320.000đ</h2>
+                    <button>Đặt hàng</button>
+                </div>
+                <div class="ten">
+                    <p class="tensp">Váy đen cổ vuông nơ trắng</p>
+                    <h2 class="giasp">280.000đ</h2>
+                    <button>Đặt hàng</button>
+                </div>
+                <div class="ten">
+                    <p class="tensp">Váy trắng hoa nhí cổ vuông</p>
+                    <h2 class="giasp">250.000đ</h2>
+                    <button>Đặt hàng</button>
+                </div>
+                </div>
+            <div style="margin-left: 20px;color:#f1900f"><h2>TÚI XÁCH</h2></div>
+            <div class="monan">
+                <a class="sp" href="#"><img src="images/tui5.jpg" alt="" width="290" height="300px"/></a>
+                <a class="sp" href="#"><img src="images/tui13.jpg" alt="" width="290" height="300px"/></a>
+                <a class="sp" href="#"><img src="images/tui16.jpg" alt="" width="290" height="300px"/></a>
+                <a class="sp" href="#"><img src="images/tui18.jpg" alt="" width="290" height="300px"/></a>
+            </div>
+        </div class="tenmonan">
+        <div class="ten">
+            <p class="tensp">Túi kẹp nách kẻ xanh</p>
+            <h2 class="giasp">220.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        <div class="ten">
+            <p class="tensp">Túi kẹp nách dây ngọc xanh non </p>
+            <h2 class="giasp">280.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        <div class="ten">
+            <p class="tensp">Túi hộp tím dây xoắn sang chảnh</p>
+            <h2 class="giasp">235.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        <div class="ten">
+            <p class="tensp">Túi da cá sấu hồng baby</p>
+            <h2 class="giasp">220.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        </div>
+        <div style="margin-left: 20px;color:#f1900f"><h2>GIÀY DÉP</h2></div>
+            <div class="monan">
+                <a class="sp" href="#"><img src="images/shoes1.jpg" alt="" width="290" height="300px"/></a>
+                <a class="sp" href="#"><img src="images/shoes2.jpg" alt="" width="290" height="300px"/></a>
+                <a class="sp" href="#"><img src="images/shoes3.jpg" alt="" width="290" height="300px"/></a>
+                <a class="sp" href="#"><img src="images/saldal1.jpg" alt="" width="290" height="300px"/></a>
+            </div>
+        </div class="tenmonan">
+        <div class="ten">
+            <p class="tensp">Giày búp bê 2 dây (đế 3cm)</p>
+            <h2 class="giasp">200.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        <div class="ten">
+            <p class="tensp">Giày Barbie shoes</p>
+            <h2 class="giasp">280.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        <div class="ten">
+            <p class="tensp">Giày mũi tròn quai ngọc (đế 5cm)</p>
+            <h2 class="giasp">290.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        <div class="ten">
+            <p class="tensp">Saldal mũi vuông dây đính đá</p>
+            <h2 class="giasp">230.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        </div>
+        <div style="margin-left: 20px;color:#f1900f"><h2>CROPTOP</h2></div>
+            <div class="monan">
+                <a class="sp" href="#"><img src="images/crt1.jpg" alt="" width="290" height="300px"/></a>
+                <a class="sp" href="#"><img src="images/crt2.jpg" alt="" width="290" height="300px"/></a>
+                <a class="sp" href="#"><img src="images/crt3.jpg" alt="" width="290" height="300px"/></a>
+                <a class="sp" href="#"><img src="images/crt4.jpg" alt="" width="290" height="300px"/></a>
+            </div>
+        </div class="tenmonan">
+        <div class="ten">
+            <p class="tensp">Crotop cổ vuông tay dài dây nơ</p>
+            <h2 class="giasp">160.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        <div class="ten">
+            <p class="tensp">Crotop cadigan mỏng dài tay</p>
+            <h2 class="giasp">120.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        <div class="ten">
+            <p class="tensp">Crotop trễ vai bo ngực tay dài</p>
+            <h2 class="giasp">170.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        <div class="ten">
+            <p class="tensp">Croptop voan nhúm cổ vuông</p>
+            <h2 class="giasp">155.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        </div>
+        <div style="margin-left: 20px;color:#f1900f"><h2>CHÂN VÁY</h2></div>
+            <div class="monan">
+                <a class="sp" href="#"><img src="images/cv1.jpg" alt="" width="290" height="300px"/></a>
+                <a class="sp" href="#"><img src="images/cv5.jpg" alt="" width="290" height="300px"/></a>
+                <a class="sp" href="#"><img src="images/cv7.jpg" alt="" width="290" height="300px"/></a>
+                <a class="sp" href="#"><img src="images/cv9.jpg" alt="" width="290" height="300px"/></a>
+            </div>
+        </div class="tenmonan">
+        <div class="ten">
+            <p class="tensp">Chân váy hồng nhúm 2 đường</p>
+            <h2 class="giasp">150.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        <div class="ten">
+            <p class="tensp">Chân váy trắng đuôi cá</p>
+            <h2 class="giasp">160.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        <div class="ten">
+            <p class="tensp">Chân váy xanh họa tiết hoa cúc</p>
+            <h2 class="giasp">165.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        <div class="ten">
+            <p class="tensp">Chân váy dài họa tiết hoa nhí (2 màu như ảnh)</p>
+            <h2 class="giasp">155.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        </div>
+        <div style="margin-left: 20px;color:#f1900f"><h2>SET ĐỒ XINH</h2></div>
+            <div class="monan">
+                <a class="sp" href="#"><img src="images/set1.jpg" alt="" width="290" height="300px"/></a>
+                <a class="sp" href="#"><img src="images/set3.jpg" alt="" width="290" height="300px"/></a>
+                <a class="sp" href="#"><img src="images/set4.jpg" alt="" width="290" height="300px"/></a>
+                <a class="sp" href="#"><img src="images/set5.jpg" alt="" width="290" height="300px"/></a>
+            </div>
+        </div class="tenmonan">
+        <div class="ten">
+            <p class="tensp">Set cv kẻ trắng đen thanh lịch</p>
+            <h2 class="giasp">450.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        <div class="ten">
+            <p class="tensp">Set caro xanh trắng cổ V</p>
+            <h2 class="giasp">380.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        <div class="ten">
+            <p class="tensp">Set đen hường chất style</p>
+            <h2 class="giasp">420.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        <div class="ten">
+            <p class="tensp">Set váy kẻ hồng</p>
+            <h2 class="giasp">410.000đ</h2>
+            <button>Đặt hàng</button>
+        </div>
+        <div style="margin-left: 20px;color:#f1900f"><h2>PHỤ KIỆN TÓC</h2></div>
+            <div class="monan">
+                <a class="sp" href="#"><img src="images/pk5.jpg" alt="" width="290" height="300px"/></a>
+                <a class="sp" href="#"><img src="images/pk1.jpg" alt="" width="290" height="300px"/></a>
+                <a class="sp" href="#"><img src="images/pk8.jpg" alt="" width="290" height="300px"/></a>
+                <a class="sp" href="#"><img src="images/pk9.jpg" alt="" width="290" height="300px"/></a>
+            </div>
+        </div class="tenmonan">
+        <div class="ten">
+            <p class="tensp">Kẹp tóc nhũ bông full color </p>
+            <h2 class="giasp">10.000đ/Chiếc</h2>
+            <button>Đặt hàng</button>
+        </div>
+        <div class="ten">
+            <p class="tensp">Kẹp tóc tai thú đáng yêu</p>
+            <h2 class="giasp">12.000đ/Chiếc</h2>
+            <button>Đặt hàng</button>
+        </div>
+        <div class="ten">
+            <p class="tensp">Set 2 chiếc kẹp trái tim và tròn</p>
+            <h2 class="giasp">25.000đ/Set</h2>
+            <button>Đặt hàng</button>
+        </div>
+        <div class="ten">
+            <p class="tensp">Set 2 chiếc cặp đính hoa ngọc</p>
+            <h2 class="giasp">28.000đ/Set</h2>
+            <button>Đặt hàng</button>
+        </div>
+                <div style="margin-left: 20px;color: #f1900f"><h2>DECOR</h2></div>
+                <div class="monan">
+                    <a class="sp" href="#"><img src="images/changa1.jpg" alt="" width="290" height="300px"/></a>
+                    <a class="sp" href="#"><img src="images/changa2.jpg" alt="" width="290" height="300px"/></a>
+                    <a class="sp" href="#"><img src="images/changa3.jpg" alt="" width="290" height="300px"/></a>
+                    <a class="sp" href="#"><img src="images/changa5.jpg" alt="" width="290" height="300px"/></a>
+                </div>
+            </div class="tenmonan">
+                <div class="ten">
+                    <p class="tensp">Bộ chiếu + vỏ gối strawberry</p>
+                    <h2 class="giasp">200.000đ</h2>
+                    <button>Đặt hàng</button>
+                </div>
+                <div class="ten">
+                    <p class="tensp">Bộ chiếu + vỏ gối chú chó Courage</p>
+                    <h2 class="giasp">200.000đ</h2>
+                    <button>Đặt hàng</button>
+                </div>
+                <div class="ten">
+                    <p class="tensp">Bộ chiếu + vỏ gối Thỏ carrots</p>
+                    <h2 class="giasp">200.000đ</h2>
+                    <button>Đặt hàng</button>
+                </div>
+                <div class="ten">
+                    <p class="tensp">Bộ chiếu + vỏ gối Bear love Strawberry</p>
+                    <h2 class="giasp">200.000đ</h2>
+                    <button>Đặt hàng</button>
+                </div>
+                </div>
+        </div>
+        </div>
+
+        <div>
+            <img src="images/ban2.jpg" alt="" width="40%" height="450" style="float: left;margin-left: 20px;margin-bottom:100px ;" />
+            <img src="images/ban4.jpg" alt="" width="40%" height="450" style="float: right;margin-right: 160px;margin-bottom:20px ;" />
+        </div>
+        <div class="chantrang">
+
+            <div class="chan1">
+                <a>GIỚI THIỆU</a>
+                <p>Quần áo - Túi Xách - Giày Dép</p>
+                <p>Clothes - Bags - Shoes</p>
+                <p>Giá rẻ - Chất lượng - Nhiệt tình</p>
+            </div>
+            <div class="chan2">
+                <a>CHÍNH SÁCH ƯU ĐÃI</a>
+                <p>Giảm 10% vào ngày sinh nhật khách hàng</p>
+                <p>Các ngày lễ Tết giảm giá 10% </p>
+                <p>Tổng hóa đơn > 1000k được giảm 5% </p>
+            </div>
+            <div class="chan3">
+                <a>LIÊN HỆ</a>
+                <p>Số ĐT: 0961670608</p>
+                <p>Gmail: thanhdut1505@gmail.com</p>
+                <a href="https://www.facebook.com/juli.store20" target="_blank">Facebook:Juli Store</a>
+                <a href="https://www.instagram.com/julistore_ordertaobao/?hl=vi" target="_blank">instagram: julistore_ordertaobao</a>
+            </div>
+            <div class="chan4">
+                <a>ĐỊA CHỈ</a>
+                <p>488 Trần Cung, Cổ Nhuế 1, Bắc Từ Liêm, Hà Nội</p>
+                <p>Thời gian mở cửa: 8:00AM to 9:00PM </p>
+            </div>
+        
+    </div>
+</body>
+
+</html>
